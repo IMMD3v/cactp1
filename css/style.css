@@ -3,6 +3,16 @@
     background-color:rgb(28, 39, 54);
 }
 
+.interestingArticle {
+    color: white;
+    background-color: rgb(28, 39, 54);
+}
+
+.darkFooter {
+    color: white;
+    background-color:rgb(28, 39, 54);
+}
+
 .zoomOnHover {
     overflow: hidden;
 }
@@ -18,7 +28,7 @@
 
 @media (min-width: 992px) {
     .featuredPost {
-        background-color: rgba(255, 255, 255, 0);
+        background-color: rgba(0, 0, 0, 0.301);
         position: absolute;
         width: 50%;
         top: auto;
