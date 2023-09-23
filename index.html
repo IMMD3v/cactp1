@@ -10,15 +10,33 @@
 <body style="background-color: darkslateblue;">
     <div class="container" style="background-color: wheat;">
         <header style="background-color: darkslategrey;">
-            <nav>
-                <a href="#"><img src="assets/images/codoacodo.png" width="100px" alt="Logo de Codo a Codo"></a>
-                <ul>
-                    <li>La Conferencia</li>
-                    <li>Oradores</li>
-                    <li>Lugar y Fecha</li>
-                    <li>Comprar Tickets</li>
-                </ul>
-            </nav>
+            <nav class="navbar navbar-expand-sm navbar-dark bg-dark" aria-label="Eighth navbar example">
+                <div class="container">
+                    <a class="navbar-brand" href="#">
+                        <img src="assets/images/codoacodo.png" alt="Logo" style="height: auto; width: 50px;" class="d-inline-block align-text-top">
+                        Conf Bs As
+                      </a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarsExample07">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">La Conferencia</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Oradores</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Lugar y Fecha</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link text-success" href="#">Comprar Tickets</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
         </header>
         <main>
             <div class="container">
@@ -29,6 +47,12 @@
                     <div class="col-12 featuredPost">
                         <h2>Teatro Colón</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero nihil consectetur optio deleniti, iusto fuga eaque error quas amet. Exercitationem esse repellat autem nam sapiente tempore quia qui molestiae perspiciatis.</p>
+                        <div class="row">
+                            <div class="col-12 d-flex justify-content-end">
+                                <button type="button" class="btn btn-outline-light">Quiero ser orador</button>
+                                <button type="button" class="btn btn-outline-success">Comprar Tickets</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -75,7 +99,7 @@
             </div>
             <div class="container" style="background-color: mediumslateblue;">
                 <div class="row">
-                    <div class="col-12">
+                    <div class="col-12 text-center">
                         <p>Conviertete en un</p>
                         <h2>Web Developer</h2>
                         <p>Anotate a continuación y cuentanos de que quisieras charlar!</p>
@@ -83,23 +107,45 @@
                 </div>
                 <div class="row">
                     <form>
-                        <input type="text" name="name" id="name" placeholder="Nombre">
-                        <input type="text" name="surname" id="surname" placeholder="Apellido">
-                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Cuéntanos de qué quisieras hablar?"></textarea>
-                        <p>Recuerda incluír un título para tu charla</p>
-                        <button type="button" class="btn btn-success">Enviar</button>
-                    </form>
+                        <div class="row mb-4">
+                          <div class="col-sm-12 col-lg-6 col-md-6">
+                            <div class="form-outline">
+                              <input type="text" id="form3Example1" class="form-control" />
+                              <label class="form-label" for="form3Example1">Nombre</label>
+                            </div>
+                          </div>
+                          <div class="col-sm-12 col-lg-6 col-md-6">
+                            <div class="form-outline">
+                              <input type="text" id="form3Example2" class="form-control" />
+                              <label class="form-label" for="form3Example2">Apellido</label>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="form-outline mb-4">
+                          <input type="email" id="form3Example3" class="form-control" />
+                          <label class="form-label" for="form3Example3">Email</label>
+                        </div>
+                        <div class="form-outline mb-4">
+                            <textarea class="form-control" id="form4Example3" rows="4" placeholder="Cuéntanos de que quisieras exponer"></textarea>
+                            <label class="form-label" for="form4Example3">Recuerda agregar un título</label>
+                          </div>
+                          <div class="row">
+                              <button type="submit" class="btn btn-primary btn-block mb-4">Contactar!</button>
+                          </div>
+                      </form>
                 </div>
             </div>
         </main>
-        <footer style="background-color: darkgreen;">
-            <ul>
-                <li>Preguntas frecuentes</li>
-                <li>Contacto</li>
-                <li>Prensa</li>
-                <li>Términos y condiciones</li>
+        <footer class="py-3 my-4" style="background-color: rgb(94, 141, 94);">
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+              <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Contacto</a></li>
+              <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">FAQ</a></li>
+              <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Conferencias</a></li>
+              <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Comprar Tickets</a></li>
+              <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Acerca de nosotros...</a></li>
             </ul>
-        </footer>
+            <p class="text-center text-body-secondary">© 2023 Israel Montenegro Dev.</p>
+          </footer>
     </div>
     <script src="js/bootstrap.min.js"></script>
 </body>
