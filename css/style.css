@@ -1,3 +1,7 @@
+.frontImage {
+    position: relative;
+}
+
 .featuredPost {
     color: white;
     background-color:rgb(28, 39, 54);
@@ -11,6 +15,9 @@
 .darkFooter {
     color: white;
     background-color:rgb(28, 39, 54);
+}
+.contactForm {
+    background-color: ghostwhite;
 }
 
 .zoomOnHover {
@@ -28,11 +35,23 @@
 
 @media (min-width: 992px) {
     .featuredPost {
-        background-color: rgba(0, 0, 0, 0.301);
+        background-color: rgba(0, 0, 0, 0);
         position: absolute;
         width: 50%;
-        top: auto;
+        right: 0px;
+        bottom: 10px;
         margin-left: 50px;
         margin-top: 20px;
+    }
+
+    .frontImage::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        pointer-events: none;
     }
 }
