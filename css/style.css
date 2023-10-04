@@ -43,9 +43,8 @@
         margin-left: 50px;
         margin-top: 20px;
     }
-
-    .frontImage::before {
-        content: "";
+    
+    .carousel-overlay {
         position: absolute;
         top: 0;
         left: 0;
