@@ -26,10 +26,10 @@
                         <a class="nav-link active" aria-current="page" href="#">La Conferencia</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#">Oradores</a>
+                        <a class="nav-link" href="#lasAreas">Las Areas</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#">Lugar y Fecha</a>
+                        <a class="nav-link" href="#contactUs">Contacto</a>
                       </li>
                       <li class="nav-item">
                         <a class="nav-link text-success" href="tickets/tickets.html">Comprar Tickets</a>
@@ -39,7 +39,7 @@
                 </div>
               </nav>
         </header>
-        <main>
+        <main id="testRep">
             <div class="container frontImage mb-3">
                 <div class="row">
                     <div class="col-12 px-0">
@@ -66,13 +66,13 @@
                         <div class="row">
                             <div class="col-12 d-flex justify-content-end">
                                 <button type="button" class="btn btn-outline-light m-2">Quiero ser orador</button>
-                                <button type="button" class="btn btn-outline-success m-2">Comprar Tickets</button>
+                                <button type="button" class="btn btn-outline-success m-2" onclick="ticketRedirection()">Comprar Tickets</button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="container mb-3">
+            <div class="container mb-3" id="lasAreas">
                 <div class="row">
                     <div class="col-12 text-center mb-2">
                         <h3>Conocé las áreas</h3>
@@ -114,7 +114,7 @@
                     </div>
                 </div>
             </div>
-            <div class="container contactForm">
+            <div class="container contactForm" id="contactUs">
                 <div class="row">
                     <div class="col-12 text-center">
                         <p>Conviertete en un</p>
@@ -155,9 +155,8 @@
         </main>
         <footer class="py-3 my-4 darkFooter">
             <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-              <li class="nav-item"><a href="#" class="nav-link px-2">Contacto</a></li>
-              <li class="nav-item"><a href="#" class="nav-link px-2">FAQ</a></li>
-              <li class="nav-item"><a href="#" class="nav-link px-2">Conferencias</a></li>
+              <li class="nav-item"><a href="#contactUs" class="nav-link px-2">Contacto</a></li>
+              <li class="nav-item"><a href="#lasAreas" class="nav-link px-2">Las Areas</a></li>
               <li class="nav-item"><a href="tickets/tickets.html" class="nav-link px-2">Comprar Tickets</a></li>
               <li class="nav-item"><a href="#" class="nav-link px-2">Acerca de nosotros...</a></li>
             </ul>
@@ -165,5 +164,6 @@
           </footer>
     </div>
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/redirect.js"></script>
 </body>
 </html>
