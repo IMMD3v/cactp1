@@ -80,7 +80,7 @@
                         <div class="row mb-4">
                           <div class="col-sm-12 col-lg-6 col-md-6">
                             <div class="form-outline">
-                              <input type="text" id="buyFormName" class="form-control" />
+                              <input type="text" id="buyFormName" class="form-control" autofocus/>
                               <label class="form-label" for="buyFormName">Nombre</label>
                             </div>
                           </div>
@@ -116,14 +116,41 @@
                           </div>
                         <div class="row m-1">
                             <div class="alert alert-info" role="alert" id="finalPayment">
-                              </div>
+                            </div>
                         </div>
                         <div class="row mb-4 text-center">
                             <div class="col-sm-12 col-lg-6 col-md-6">
-                                <button type="submit" class="btn btn-success btn-block mb-4 w-100">Borrar</button>
+                                <button type="submit" class="btn btn-success btn-block mb-4 w-100" onclick="resetForm()">Borrar</button>
                             </div>
                             <div class="col-sm-12 col-lg-6 col-md-6">
-                                <button type="submit" class="btn btn-success btn-block mb-4 w-100">Resumen</button>
+                              <button type="button" class="btn btn-success btn-block mb-4 w-100" data-bs-toggle="modal" data-bs-target="#staticBackdrop" onclick="openConfirmModal()">Resumen</button>
+                            </div>
+                            <!-- Modal -->
+                            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                              <div class="modal-dialog">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Resumen de Compra</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                  </div>
+                                  <div class="modal-body">
+                                    <p id="buyName" class="d-inline"></p>
+                                    <p id="buySurname" class="d-inline"></p>
+                                    <br>
+                                    <p class="d-inline">Estas comprando </p>
+                                    <p id="ticketQty" class="d-inline"></p>
+                                    <p class="d-inline"> Tickets</p>
+                                    <p id="modalFinalPayment"></p>
+                                    <br>
+                                    <p class="d-inline">El comprobante se enviará a: </p>
+                                    <p class="d-inline" id="buyEmail"></p>
+                                  </div>
+                                  <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal" onclick="confirmPayment()">Confirmar</button>
+                                  </div>
+                                </div>
+                              </div>
                             </div>
                           </div>
                       </form>
