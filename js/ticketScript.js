@@ -62,6 +62,7 @@ function resetForm() {
 //función que simularía haber comprado las entradas
 function confirmPayment() {
     alert("Muchas gracias por tu compra!");
+    document.getElementById("buyTicketForm").reset();
 }
 
 function openConfirmModal() {
